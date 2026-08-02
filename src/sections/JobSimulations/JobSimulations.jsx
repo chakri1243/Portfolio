@@ -1,6 +1,6 @@
 import "./JobSimulations.css";
 import JobSimulationCard from "./JobSimulationCard";
-import { jobSimulations } from "./jobSimulationData";
+import { jobSimulations } from "./JobSimulationData";
 
 export default function JobSimulations() {
   return (

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import "./Hero.css";
 
-import heroData from "../../data/heroData";
+import heroData from "../../data/herodata";
 
 import HeroButtons from "./HeroButtons";
 import HeroImage from "./HeroImage";
