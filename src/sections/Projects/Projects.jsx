@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import {
   featuredProject,
   projects,
-} from "./projectsData";
+} from "./ProjectsData";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
