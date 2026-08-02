@@ -9,7 +9,7 @@ import HeroImage from "./HeroImage";
 import HeroSocial from "./HeroSocial";
 import HeroStats from "./HeroStats";
 import HeroTypewriter from "./HeroTypewriter";
-import profile from "../../assets/profile.png";
+import profile from "../../assets/images/profile.png";
 
 export default function Hero() {
   return (
