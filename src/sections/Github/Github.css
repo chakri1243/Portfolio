@@ -1,0 +1,30 @@
+.github-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.github-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.github-card img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.stats h4 {
+  font-size: 28px;
+  color: #60a5fa;
+}

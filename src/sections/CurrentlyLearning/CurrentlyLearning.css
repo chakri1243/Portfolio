@@ -1,0 +1,51 @@
+.learning-section{
+    padding:100px 8%;
+}
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.learning-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:20px;
+    padding:25px;
+    transition:.35s;
+}
+
+.learning-card:hover{
+    transform:translateY(-8px);
+}
+
+.learning-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+}
+
+.learning-top h3{
+    color:white;
+}
+
+.learning-top span{
+    color:#60A5FA;
+    font-weight:600;
+}
+
+.progress-bar{
+    height:10px;
+    background:#1f2937;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    border-radius:20px;
+    transition:1.2s;
+}

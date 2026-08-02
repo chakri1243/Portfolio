@@ -1,0 +1,89 @@
+.command-button{
+    position:fixed;
+    right:25px;
+    bottom:90px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    z-index:1000;
+    font-size:20px;
+    transition:.3s;
+}
+
+.command-button:hover{
+    transform:scale(1.1);
+}
+
+.palette-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:120px;
+    z-index:9999;
+}
+
+.palette{
+    width:600px;
+    max-width:90%;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+}
+
+.palette-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.palette-header input{
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:18px;
+}
+
+.palette-header button{
+    border:none;
+    background:none;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.palette-results{
+    max-height:420px;
+    overflow-y:auto;
+}
+
+.palette-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 22px;
+    cursor:pointer;
+    color:white;
+    transition:.25s;
+}
+
+.palette-item:hover{
+    background:#2563eb;
+}
+
+.palette-item svg{
+    font-size:18px;
+}

@@ -1,12 +1,37 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+@import "./styles/variables.css";
+
+@import "./styles/global.css";
+
+@import "./styles/animations.css";
+
+html{
+
+    scroll-behavior:smooth;
+
 }
 
-body {
-  margin: 0;
-  background: #050816;
-  color: white;
-  font-family: "Inter", sans-serif;
+body{
+
+    background:#050816;
+
+}
+:root{
+    --bg:#020617;
+    --card:#111827;
+    --accent:#3b82f6;
+    --text:#ffffff;
+}
+
+*{
+    transition:
+    background-color .35s ease,
+    color .35s ease,
+    border-color .35s ease;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
 }

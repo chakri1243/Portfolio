@@ -1,0 +1,59 @@
+.theme-switcher{
+
+position:fixed;
+
+left:25px;
+
+bottom:30px;
+
+display:flex;
+
+gap:10px;
+
+z-index:999;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:12px;
+
+border-radius:30px;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.theme-switcher button{
+
+width:42px;
+
+height:42px;
+
+border:none;
+
+cursor:pointer;
+
+border-radius:50%;
+
+font-size:20px;
+
+background:rgba(255,255,255,.1);
+
+transition:.3s;
+
+}
+
+.theme-switcher button:hover{
+
+transform:scale(1.15);
+
+}
+
+.theme-switcher button.active{
+
+outline:2px solid white;
+
+transform:scale(1.1);
+
+}
