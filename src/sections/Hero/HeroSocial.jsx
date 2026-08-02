@@ -4,7 +4,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-import heroData from "../../data/heroData";
+import heroData from "../../data/herodata";
 
 export default function HeroSocial() {
   return (
