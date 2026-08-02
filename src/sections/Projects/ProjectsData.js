@@ -1,3 +1,12 @@
+import resume1 from "../../assets/projects/resume-analyzer/1.png";
+import resume2 from "../../assets/projects/resume-analyzer/2.png";
+import resume3 from "../../assets/projects/resume-analyzer/3.png";
+import resume4 from "../../assets/projects/resume-analyzer/4.png";
+
+import portfolio1 from "../../assets/projects/portfolio/1.png";
+import portfolio2 from "../../assets/projects/portfolio/2.png";
+import portfolio3 from "../../assets/projects/portfolio/3.png";
+import assistant1 from "../../assets/projects/ai-assistant/1.png";
 const featuredProject = {
   title: "AI Resume Analyzer",
 
@@ -6,7 +15,16 @@ const featuredProject = {
   description:
     "An intelligent web application that analyzes resumes, calculates ATS score, performs Job Description matching, and provides AI-powered recommendations to improve resumes.",
 
-  image: "/src/assets/projects/resume-analyzer.png",
+  // Cover Image
+  image: resume1,
+
+  // Gallery Images
+  images: [
+    resume1,
+    resume2,
+    resume3,
+    resume4,
+  ],
 
   features: [
     "ATS Score Analysis",
@@ -14,7 +32,7 @@ const featuredProject = {
     "Job Description Matching",
     "AI Recommendations",
     "Grammar Suggestions",
-    "PDF Report Generation"
+    "PDF Report Generation",
   ],
 
   tech: [
@@ -25,23 +43,24 @@ const featuredProject = {
     "SQLite",
     "HTML",
     "CSS",
-    "JavaScript"
+    "JavaScript",
   ],
 
   github: "https://github.com/chakri1243/AI_Resume_Analyzer",
 
-  live: "#"
+  live: "#",
 };
 
 const projects = [
-
   {
-
     title: "Personal AI Assistant",
 
     subtitle: "LLM Based Assistant",
 
-    image: "/src/assets/projects/ai-assistant.png",
+    // Keep your existing image until you add screenshots
+    image: [
+      assistant1,
+    ],
 
     description:
       "A personal AI assistant built using modern LLM technologies capable of answering questions and assisting users.",
@@ -50,22 +69,28 @@ const projects = [
       "Python",
       "Streamlit",
       "LangChain",
-      "OpenAI"
+      "OpenAI",
     ],
 
     github: "#",
 
-    live: "#"
-
+    live: "#",
   },
 
   {
-
     title: "Developer Portfolio",
 
     subtitle: "React Portfolio",
 
-    image: "/src/assets/projects/portfolio.png",
+    // Cover Image
+    image: portfolio1,
+
+    // Gallery Images
+    images: [
+      portfolio1,
+      portfolio2,
+      portfolio3,
+    ],
 
     description:
       "Modern responsive portfolio showcasing AI projects, certifications, and technical skills.",
@@ -73,15 +98,13 @@ const projects = [
     tech: [
       "React",
       "CSS",
-      "Framer Motion"
+      "Framer Motion",
     ],
 
     github: "#",
 
-    live: "#"
-
-  }
-
+    live: "#",
+  },
 ];
 
 export { featuredProject, projects };

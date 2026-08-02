@@ -1,7 +1,31 @@
+import { useState, useEffect } from "react";
 import "./Projects.css";
 
 export default function ProjectModal({ project, onClose }) {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    setCurrentImage(0);
+  }, [project]);
+
   if (!project) return null;
+
+  const images =
+    project.images && project.images.length
+      ? project.images
+      : [project.image];
+
+  const nextImage = () => {
+    setCurrentImage((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -17,9 +41,48 @@ export default function ProjectModal({ project, onClose }) {
         </button>
 
         <img
-          src={project.image}
+          src={images[currentImage]}
           alt={project.title}
+          className="project-gallery-image"
         />
+
+        {images.length > 1 && (
+          <div className="gallery-controls">
+
+            <button onClick={prevImage}>
+              ◀
+            </button>
+
+            <span>
+              {currentImage + 1} / {images.length}
+            </span>
+
+            <button onClick={nextImage}>
+              ▶
+            </button>
+
+          </div>
+        )}
+
+        {images.length > 1 && (
+          <div className="gallery-thumbnails">
+
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt=""
+                onClick={() => setCurrentImage(index)}
+                className={
+                  currentImage === index
+                    ? "active-thumb"
+                    : ""
+                }
+              />
+            ))}
+
+          </div>
+        )}
 
         <h2>{project.title}</h2>
 
@@ -33,7 +96,9 @@ export default function ProjectModal({ project, onClose }) {
 
             <ul>
               {project.features.map((item) => (
-                <li key={item}>✓ {item}</li>
+                <li key={item}>
+                  ✓ {item}
+                </li>
               ))}
             </ul>
           </>
@@ -41,16 +106,26 @@ export default function ProjectModal({ project, onClose }) {
 
         <div className="tech-list">
           {project.tech.map((tech) => (
-            <span key={tech}>{tech}</span>
+            <span key={tech}>
+              {tech}
+            </span>
           ))}
         </div>
 
         <div className="project-buttons">
-          <a href={project.github} target="_blank">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub
           </a>
 
-          <a href={project.live} target="_blank">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noreferrer"
+          >
             Live Demo
           </a>
         </div>
