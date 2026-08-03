@@ -48,34 +48,10 @@ const featuredProject = {
 
   github: "https://github.com/chakri1243/AI_Resume_Analyzer",
 
-  live: "#",
+  live: "https://ai-resume-analyzer-1-snxd.onrender.com/",
 };
 
 const projects = [
-  {
-    title: "Personal AI Assistant",
-
-    subtitle: "LLM Based Assistant",
-
-    // Keep your existing image until you add screenshots
-    image: [
-      assistant1,
-    ],
-
-    description:
-      "A personal AI assistant built using modern LLM technologies capable of answering questions and assisting users.",
-
-    tech: [
-      "Python",
-      "Streamlit",
-      "LangChain",
-      "OpenAI",
-    ],
-
-    github: "#",
-
-    live: "#",
-  },
 
   {
     title: "Developer Portfolio",
@@ -99,6 +75,30 @@ const projects = [
       "React",
       "CSS",
       "Framer Motion",
+    ],
+
+    github: "https://github.com/chakri1243/Portfolio",
+
+    live: "https://chakrapani-portfolio.vercel.app/",
+  },
+  {
+    title: "Personal AI Assistant",
+
+    subtitle: "LLM Based Assistant",
+
+    // Keep your existing image until you add screenshots
+    image: [
+      assistant1,
+    ],
+
+    description:
+      "A personal AI assistant built using modern LLM technologies capable of answering questions and assisting users.",
+
+    tech: [
+      "Python",
+      "Streamlit",
+      "LangChain",
+      "OpenAI",
     ],
 
     github: "#",

@@ -120,14 +120,6 @@ export default function ProjectModal({ project, onClose }) {
           >
             GitHub
           </a>
-
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live Demo
-          </a>
         </div>
       </div>
     </div>

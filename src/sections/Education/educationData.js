@@ -30,43 +30,43 @@ const certifications = [
     title:"Deloitte Data Analytics Job Simulation",
     issuer:"Deloitte",
     year:"2025",
-    link:"#"
+    certificate: "/certifications/Deloitte.pdf",
   },
 
   {
     title:"Machine Learning",
     issuer:"Coursera",
     year:"2025",
-    link:"#"
+    certificate: "/certifications/ML.pdf",
   },
 
   {
-    title:"Python Programming",
-    issuer:"Infosys Springboard",
+    title:"RedHat-(RH124-RHA)",
+    issuer:"RedHat",
     year:"2024",
-    link:"#"
+    certificate: "/certifications/RedHat.pdf",
   },
 
   {
-    title:"SQL",
-    issuer:"HackerRank",
+    title:"SQL Foundations",
+    issuer:"Microsoft-Coursera",
     year:"2024",
-    link:"#"
+    certificate: "/certifications/SQL.pdf",
   },
 
   {
-    title:"Power BI",
-    issuer:"Microsoft",
+    title:"GenAI Intro and Applications",
+    issuer:"IBM",
     year:"2025",
-    link:"#"
+    certificate: "/certifications/GenAI.pdf",
   },
 
   {
     title: "Oracle cloud Infrastructure Certified GenAI Professional",
     issuer:"Oracle Certified Professional",
     year:"2025",
-    link:"#"
-  }
+    certificate: "/certifications/Oracle.pdf",
+  },
 
 
 ];

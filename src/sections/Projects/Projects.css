@@ -155,10 +155,6 @@ color:white;
 transition:.3s;
 }
 
-.project-buttons a:hover{
-background:#1d4ed8;
-}
-
 .modal-overlay{
 position:fixed;
 inset:0;
