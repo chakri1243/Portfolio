@@ -30,7 +30,7 @@ const certifications = [
     title:"Deloitte Data Analytics Job Simulation",
     issuer:"Deloitte",
     year:"2025",
-    certificate: "/certifications/Deloitte.pdf",
+    certificate: "/certifications/deloitte.pdf",
   },
 
   {
